@@ -22,10 +22,15 @@
     //$usuario->login("JFrancisco", "qwesdfvc");
     //echo $usuario;
 
-    $aluno = new Usuario("aluno4", "@lun0");
+    //criando um usuário
+    /*$aluno = new Usuario("aluno4", "@lun0");
     //$aluno -> setDeslogin("aluno3");
     //$aluno -> setDessenha("@luno");
     $aluno -> insert();
-    echo $aluno;
+    echo $aluno;*/
 
+    $usuario = new Usuario();
+    $usuario -> loadById(16);
+    $usuario -> update("professor", "poli");
+    echo $usuario;
 ?>
